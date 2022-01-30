@@ -4,23 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TBAG2.0</title>
+    <title>Barron's Adventure</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div id="content">
-        <div id="sound">
-            <button id="music">Disable Music</button>
-            <button id="audio">Disable all Audio</button>
-        </div>
-        <div id="controls">
-           <button class="btn" id="startButton">Start</button>
-           <div id="restartDiv">
-               <button class="btn" id="restartButton" onClick="startGame();">Restart</button>
+    <div id="wrapper">
+        <img id="logo" src="./assets/logo.svg" alt="">
+        <canvas id="canvas"></canvas>
+        <img id="startScreen" src="./assets/startScreen.png" alt="Start Screen">
+        <img id="controlsScreen" src="./assets/controlsScreen.png" alt="Controls Screen">
+        <button id="restartBtn"></button>
+        <div id="colorWrapper">
+            <div class="color">
+                <div id="red"></div>
+            </div>
+            <div class="color">
+                <div id="purple"></div>
+            </div>
+            <div class="color">
+                <div id="green"s></div>
             </div>
         </div>
+        <p>Sound Credits: 
+            <a href="https://www.purple-planet.com">Music</a>,
+            <a href="https://www.fesliyanstudios.com">Roll Sound</a>,
+            <a href=" https://mixkit.co">Collect Sound</a>,
+            <a href=" https://mixkit.co">Collision Sound</a>,
+            <a href="https://mixkit.co">Jump Sound</a>
+        </p>
     </div>
-    <script src="./script.js"></script>
+    <script type="module" src="./script.js"></script>
 </body>
 </html>
-

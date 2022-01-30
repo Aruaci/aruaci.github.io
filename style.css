@@ -1,104 +1,97 @@
-body {
-    margin: 0px;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-#content {
-    height: 100vh;
-    background-image: url(./BG2.png);
-    background-position: center;
+#canvas{
+    /*
+    background-image: url('./assets/bg2.png');
     background-repeat: no-repeat;
+    */
     background-size: cover;
+    box-shadow:7px 3px 30px rgba(32, 55, 79, .5);
+    display: none;
 }
 
-#controls {
+#restartBtn{
+    display: none;
+    position: absolute;
+    background: none;
+    border: none;
+    font-weight: 600;
+    padding: 20px 180px;
+    height: 500px;
+    width: 1300px;
+}
+
+#restartBtn:hover {
+    cursor: pointer;
+}
+
+#wrapper {
     height: 100vh;
+    width: 100vw;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    background-color: rgb(163, 225, 230);
+    
 }
 
-#content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+#logo {
+    margin-top: 0;
+    height: 120px;
+    margin-bottom: 30px;
 }
 
-#restartDiv {
-    justify-content: end !important;
+#startScreen {
+    height: 500px;
+    width: 1300px;
+    box-shadow: 7px 3px 30px rgba(32, 55, 79, .5);
+    display: inline;
 }
 
-.btn {
-    font-size: 30px;
-    padding: 15px 20px 15px 20px;
-    background-color: rgb(225, 225, 225, .2);
-    border: 2px solid white;
-    color: white;
-    border-radius: 10px;
-    transition: all 0.2s ease-in-out;
-    margin-bottom: 120px;
-    letter-spacing: 1.3px;
-    font-family: roboto, sans-serif;
-    font-weight: 400;
+#startScreen:hover {
+    cursor: pointer;
 }
 
-#restartButton {
-    background-color: rgb(225, 225, 225, .5);
+#controlsScreen {
+    height: 500px;
+    width: 1300px;
+    box-shadow: 7px 3px 30px rgba(32, 55, 79, .5);
+    display: none;
 }
 
-.btn:hover {
-    box-shadow: 0px 5px 15px rgb(255, 35, 35);
-    border: 4px solid rgb(255, 35, 35);
-    color: rgb(255, 35, 35);
-    background-color: transparent;
-    font-size: 35px;
-    letter-spacing: 2px;
+#controlsScreen:hover {
+    cursor: pointer;
 }
 
-#restartButton:hover {
-    box-shadow: 0px 5px 15px rgb(140, 216, 133);
-    border: 4px solid rgb(140, 216, 133);
-    color: rgb(140, 216, 133);
-    background-color: rgb(0, 0, 0, 0.7);
-    font-size: 35px;
-    letter-spacing: 2px;
+#colorWrapper {
+    height: 500px;
+    width: 1300px;
+    display: none;
+    flex-direction: row;
+    box-shadow: 7px 3px 30px rgba(32, 55, 79, .5);
+    background-image: url(./assets/colorChooseScreen.png);
 }
 
-#startButton {
-    margin-top: 120px;
+.color div {
+    height: 500px;
+    width: 432px;
 }
 
-#restartButton {
-    visibility: hidden;
+.color div:hover {
+    cursor: pointer;
 }
 
-#audio {
-    margin: 12px;
-    font-size: 12px;
-    border: solid 1px white;
-    background-color: rgb(0, 0, 0, 0.4);
-    color: white;
-    padding: 4px 6px 4px 6px;
-    transition: all 0.2s ease-in-out;
+p {
+    position: absolute;
+    bottom: 0;
+    font-family: 'Raleway';
+    color: rgba(0, 0, 0, .5);
+    font-weight: 500;
 }
-
-#music {
-    font-size: 12px;
-    margin: 12px;
-    border: solid 1px white;
-    background-color: rgb(0, 0, 0, 0.4);
-    color: white;
-    padding: 4px 6px 4px 6px;
-    transition: all 0.2s ease-in-out;
-}
-
-#audio:hover {
-    color: red;
-    border-color: red;
-}
-
-#music:hover {
-    color: red;
-    border-color: red;
+p a {
+    color: rgba(0, 0, 0, .5);
 }
